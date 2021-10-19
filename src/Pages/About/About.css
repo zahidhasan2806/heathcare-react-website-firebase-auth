@@ -1,0 +1,10 @@
+.about-intro{
+    background-image: url(../../asset/about-bg-banner.png);
+}
+.about-info{
+    background-image: url(../../asset/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: cadetblue;
+}

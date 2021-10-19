@@ -1,0 +1,68 @@
+[
+    {
+        "_id": "101",
+        "position": 1,
+        "title": "Departments Of Neurology",
+        "picture1": "https://i.ibb.co/grHh2CS/neurology.jpg",
+        "about": "Department of Neurology of Evercare Hospital Dhaka provides comprehensive consultative services, diagnostic testing and treatment for a broad spectrum of neurological conditions, including diseases of the brain, spinal cord, peripheral nerves and muscles.",
+        "picture3": "https://i.ibb.co/pzGdfyz/neuro.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr Parveen Akter"
+    },
+    {
+        "_id": "102",
+        "position": 1,
+        "title": "Departments Of Gynecology",
+        "picture1": "https://i.ibb.co/RvCn9Q1/gynecology.jpg",
+        "about": "We offer complete outpatient and inpatient gynecologic care and the latest minimally invasive and robotic treatments for common and complex conditions, including uterine fibroids, urinary incontinence, and gynecologic cancers",
+        "picture3": "https://i.ibb.co/vhBjB51/gyne.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr. Mahira Alam"
+    },
+    {
+        "_id": "103",
+        "position": 1,
+        "title": "Departments Of Urology",
+        "picture1": "https://i.ibb.co/RpbvYmQ/urology.jpg",
+        "about": "The Department of Urology at Evercare Hospital Dhaka is dedicated to providing state-of-the-art medical and surgical care for all specialties of male and female urology (both adult and paediatric), as well as male infertility problems.",
+        "picture3": "https://i.ibb.co/yQfG73H/uro.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr. Mosrose Salina"
+    },
+    {
+        "_id": "104",
+        "position": 1,
+        "title": "Departments Of Cardiology",
+        "picture1": "https://i.ibb.co/yYDgq4f/cardiology.jpg",
+        "about": "The Cardiology Department of Evercare Hospital Dhaka has gained reputation for its dynamic and innovation in the diagnosis, investigation and treatment of patients with all forms of heart diseases, both generally encountered and complex cases.",
+        "picture3": "https://i.ibb.co/Hn5v6fW/cardi.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr. Taslima Akter"
+    },
+    {
+        "_id": "105",
+        "position": 1,
+        "title": "Dentel",
+        "picture1": "https://i.ibb.co/801d9qQ/dental.jpg",
+        "about": "Department of Dental & Maxillofacial Surgery of Evercare Hospital Dhaka offers full scope of the dental specialty, including general dentistry and specialized services in oral & maxillofacial surgery, orthodontics and restorative dentistry (endodontics and prosthodontics).",
+        "picture3": "https://i.ibb.co/yFyFrvy/dent.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr. Ashutosh Saha"
+    },
+    {
+        "_id": "106",
+        "position": 1,
+        "title": "Orthopedics",
+        "picture1": "https://i.ibb.co/kQv3Gyf/orthopedics.jpg",
+        "about": "The Department of Orthopaedics offers out-patient consultation services and procedures. It is well supported by fully equipped operation theatre (OT), intensive care units for pre- and post- operative care, as well as rehabilitation services in Physical Medicine & Rehabilitation Centre. ",
+        "picture3": "https://i.ibb.co/kGQq7M1/ortho.jpg",
+        "picture4": "https://i.ibb.co/8Pbhbg2/Confident-doctor-looking-at-his-senior-patient-while-speaking-to-her.jpg",
+        "picture5": "https://i.ibb.co/NVRWKr7/services-4.jpg",
+        "name": "Dr Shoib Ahmed"
+    }
+]
