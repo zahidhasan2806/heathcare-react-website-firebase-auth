@@ -15,7 +15,7 @@ const Header = () => {
     }
     const { user, logOut } = UseAuth();
     return (
-        <div className="header sticky-top">
+        <div className="header">
             <Navbar expand="lg" >
                 <Container>
                     <Navbar.Brand as={NavLink} className="text-dark" to="/home">
