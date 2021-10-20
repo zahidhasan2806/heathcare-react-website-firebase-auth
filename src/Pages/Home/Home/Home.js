@@ -4,6 +4,8 @@ import { faStethoscope, faBrain, faMedkit } from '@fortawesome/free-solid-svg-ic
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services/Services';
+import Intro from '../Intro/Intro';
+import Facilities from '../Facilities/Facilities';
 
 const Home = () => {
     return (
@@ -44,7 +46,8 @@ const Home = () => {
                 </div>
             </div>
             <Services></Services>
-
+            <Intro></Intro>
+            <Facilities></Facilities>
         </div>
     );
 };

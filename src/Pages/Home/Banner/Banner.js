@@ -3,7 +3,7 @@ import { Button, Carousel } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import slider01 from "../../../asset/carousel/slider-01.png"
 import slider02 from "../../../asset/carousel/slider-05.png"
-import slider05 from "../../../asset/carousel/slider02.jpg"
+import slider03 from "../../../asset/carousel/slider-04.png"
 
 const Banner = () => {
     return (
@@ -11,11 +11,11 @@ const Banner = () => {
             <Carousel.Item>
                 <img
                     className="d-block w-100" height="600px"
-                    src={slider05}
+                    src={slider03}
                     alt="First slide"
                 />
                 <Carousel.Caption className='mb-5 '>
-                    <h1 className="text-white">Welcome to Our Medi Help Center</h1>
+                    <h1>Welcome to Our Medi Help Center</h1>
                     <p>Nothing is more important than wellness.</p>
                     <Link to="/appoinment">
                         <Button variant="outline-primary  px-5 mb-5">Make Apponitment</Button>

@@ -44,13 +44,14 @@ const Appointment = () => {
                         {...register("number", {
                             required: true,
                             minLength: 2,
-                            maxLength: 50
+                            maxLength: 2
                         })} />
                     {
                         errors.number &&
                         <span className="text-danger">
                             {errors.number.type === 'required' && 'Please give number'}
-                            {errors.number.type === 'minLength' && 'Please give name minimum of 2 characters'}
+                            {errors.number.type === 'minLength' && 'Please give name minimum of 1 characters'}
+                            {errors.number.type === 'maxLength' && 'Please give name maximum of 2 characters'}
                         </span>
                     }
                 </Form.Group>

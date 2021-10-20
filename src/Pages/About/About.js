@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import aboutImg from "../../asset/medium-shot-health-workers-hospital.jpg"
+
+import aboutus from "../../asset/aboutUs.jpg"
 import "./About.css"
 
 const About = () => {
     return (
-        <div className="mt-5">
+        <div className="">
             <div className="text-start about-intro py-5">
                 <h1 className="py-5 ms-3"> About Us</h1>
                 <div className="text-start d-flex ">
@@ -18,11 +19,11 @@ const About = () => {
                 </div>
             </div>
             <div>
-                <Row className="mb-5 ">
+                <Row className="my-5 mx-0 ">
                     <Col md={4} sm={12}>
-                        <img src={aboutImg} width="100%" className="img-fluid rounded" alt="" />
+                        <img src={aboutus} width="100%" className="img-fluid rounded" alt="" />
                     </Col>
-                    <Col md={8} sm={12} className="text-start tex d-flex align-items-center">
+                    <Col md={8} sm={12} className="text-md-start text-sm-center d-flex align-items-center justify-content-center">
                         <div className="w-50">
                             <h5>About us</h5>
                             <h1>Welcome to Medi Help</h1>
@@ -49,7 +50,7 @@ const About = () => {
                     <div className="bg-success bg-opacity-75 mt-5 py-5">
                         <h1 className="my-3">MediHelp in numbers</h1>
                         <p className="my-3">Learn more about Bangladesh’s fastest growing healthcare business </p>
-                        <Row className="my-4" >
+                        <Row className=" m-0" >
                             <Col md={3} className="p-0">
                                 <p className="fs-1"><FontAwesomeIcon icon={faMale}></FontAwesomeIcon></p>
                                 <p>50+</p>
@@ -62,8 +63,8 @@ const About = () => {
                             </Col>
                             <Col md={3} className="p-0">
                                 <p className="fs-1"><FontAwesomeIcon icon={faUserInjured}></FontAwesomeIcon></p>
-                                <p>5,000,000 + </p>
-                                <p>WE HAVE 330 CORPORATE <br /> CUSTOMERS WITH 5M+ PATIENTS</p>
+                                <p>5,000 + </p>
+                                <p>WE HAVE 100+ CORPORATE <br /> CUSTOMERS WITH 5k+ PATIENTS</p>
                             </Col>
                             <Col md={3} className="p-0">
                                 <p className="fs-1"><FontAwesomeIcon icon={faHospital}></FontAwesomeIcon></p>
