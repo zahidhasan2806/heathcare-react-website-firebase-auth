@@ -4,7 +4,6 @@ import { faStethoscope, faBrain, faMedkit } from '@fortawesome/free-solid-svg-ic
 import React from 'react';
 import Banner from '../Banner/Banner';
 import Services from '../Services/Services/Services';
-import Contact from '../Contact/Contact';
 
 const Home = () => {
     return (
@@ -12,7 +11,7 @@ const Home = () => {
             <Banner></Banner>
             <div className="container my-5">
                 <div className="row">
-                    <div className="col-md-4 col-sm-12 bg-warning bg-opacity-25 p-3 d-flex border-start border-primary border-5">
+                    <div className="col-md-4 col-sm-12 bg-dark bg-opacity-25 p-3 d-flex border-start border-primary border-5">
                         <div className="d-flex align-items-center ">
                             <FontAwesomeIcon className="fs-1 mx-3 " icon={faBrain} />
                         </div>
@@ -22,7 +21,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className="col-md-4 col-sm-12 bg-info bg-opacity-50 p-3 d-flex">
+                    <div className="col-md-4 col-sm-12 bg-danger bg-opacity-50 p-3 d-flex">
                         <div className="d-flex align-items-center">
                             <FontAwesomeIcon className="fs-1 mx-3" icon={faMedkit} />
                         </div>
@@ -32,7 +31,7 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <div className="col-md-4 bg-danger col-sm-12 bg-opacity-50 p-3 d-flex">
+                    <div className="col-md-4 bg-success col-sm-12 bg-opacity-50 p-3 d-flex">
                         <div className="d-flex align-items-center">
                             <FontAwesomeIcon className="fs-1 mx-3" icon={faStethoscope} />
                         </div>
@@ -45,7 +44,7 @@ const Home = () => {
                 </div>
             </div>
             <Services></Services>
-            <Contact></Contact>
+
         </div>
     );
 };

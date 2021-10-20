@@ -3,14 +3,27 @@ import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Button, Container, Form, FormControl, InputGroup } from 'react-bootstrap';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import UseAuth from '../../Hooks/UseAuth';
 
 
 
 const Login = () => {
-    const { signInWithGoogle, signInWithEmail, getNewUserPassword, getNewUserEmail, error } = UseAuth();
+    const { signInWithGoogle, signInWithEmail, getNewUserPassword, getNewUserEmail, error, setUser, setError } = UseAuth();
+    const history = useHistory();
 
+    const location = useLocation();
+    const redirect = location?.state?.from || "/home";
+
+    const handleGoogleLogin = () => {
+        signInWithGoogle()
+            .then(result => {
+                setUser(result.user)
+                history.push(redirect);
+            }).catch((err) => {
+                setError(err.message)
+            })
+    }
 
     return (
         <Container className="d-flex align-items-center justify-content-center App my-5">
@@ -38,8 +51,8 @@ const Login = () => {
                     <p>{error}</p>
                 </div>
                 <Button onClick={signInWithEmail} type="submit" className="w-100" variant="outline-dark">Log-In </Button>
-                <p className="m-0">Or</p>
-                <Button onClick={signInWithGoogle} className="w-100" variant="outline-dark">Log-In with <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></Button>
+                <div className="or-seperator"><i>or</i></div>
+                <Button onClick={handleGoogleLogin} className="w-100" variant="outline-dark">Log-In with <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></Button>
                 <p className="mt-2">
                     <NavLink className="text-decoration-none" to="/signup">
                         Need an Account? Please Sign up!

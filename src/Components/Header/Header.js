@@ -34,15 +34,17 @@ const Header = () => {
                             <Nav.Link activeStyle={activeStyle} as={NavLink} to="/doctor" className="text-dark">
                                 Doctors
                             </Nav.Link>
-                            {user.email ? <Button as={NavLink} to="/home" onClick={logOut} variant="outline-dark">Log-out</Button> : <Nav.Link activeStyle={activeStyle} as={NavLink} to="/login" className="text-dark">
+                            {!user.email ? <> <Nav.Link activeStyle={activeStyle} as={NavLink} to="/login" className="text-dark">
                                 Login
-                            </Nav.Link>}
-                            {
-                                user.email ? <Navbar.Text className="ms-2">
-                                    <a className="text-decoration-none" href="#login">{user?.displayName}</a>
-                                </Navbar.Text> : <Nav.Link activeStyle={activeStyle} as={NavLink} to="/signup" className="text-dark">
+                            </Nav.Link>
+                                <Nav.Link activeStyle={activeStyle} as={NavLink} to="/signup" className="text-dark">
                                     Sign Up
-                                </Nav.Link>
+                                </Nav.Link></>
+
+                                : <> <Button as={NavLink} to="/home" onClick={logOut} variant="outline-dark">Log-out</Button> <Navbar.Text className="ms-2">
+                                    <a className="text-decoration-none" href="#login">{user?.displayName}</a>
+                                </Navbar.Text> </>
+
                             }
                         </Nav>
                     </Navbar.Collapse>

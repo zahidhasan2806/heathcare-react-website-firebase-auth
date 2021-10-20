@@ -1,5 +1,3 @@
-
-import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faLock, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,7 +12,7 @@ import UseAuth from "../../Hooks/UseAuth";
 
 
 const SignUp = () => {
-    const { signInWithGoogle, handleSubmitForm, getNewUserEmail, getNewUserPassword, error, getNewUserName } = UseAuth();
+    const { handleSubmitForm, getNewUserEmail, getNewUserPassword, error, getNewUserName } = UseAuth();
 
 
     return (
@@ -43,14 +41,14 @@ const SignUp = () => {
                 <InputGroup className="mb-3">
                     <InputGroup.Text id="basic-addon1"><FontAwesomeIcon icon={faLock}></FontAwesomeIcon></InputGroup.Text>
                     <FormControl onBlur={getNewUserPassword} required type="password"
-                        placeholder="Password" type="password"
+                        placeholder="Password"
                         aria-label="Username"
                         aria-describedby="basic-addon1"
                     />
                 </InputGroup>
-                <Button type="submit" className="w-100" variant="outline-dark">Log-In </Button>
-                <p className="m-0">Or</p>
-                <Button onClick={signInWithGoogle} className="w-100" variant="outline-dark">SingUp with <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></Button>
+                <Button type="submit" className="w-100" variant="outline-dark">Sign Up </Button>
+
+                {/* <Button onClick={signInWithGoogle} className="w-100" variant="outline-dark">SingUp with <FontAwesomeIcon icon={faGoogle}></FontAwesomeIcon></Button> */}
                 <div className="text-danger">
                     <p>{error}</p>
                 </div>
